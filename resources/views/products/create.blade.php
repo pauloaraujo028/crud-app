@@ -23,11 +23,11 @@
                 <label>Descrição (opcional)</label>
                 <textarea cols="10" rows="5" name="description" required ></textarea>
                 <label>Adicionar Imagem</label>
-                <img src="" alt="" class="img-product" id="file-preview" />
-                <input type="file" name="image" accept="image/*" onchange="showFile(event)" required >
-            </div>
-            <div>
-                <label>Categoria</label>
+                <img src="{{ isset($product) && $product->image ? asset('images/' . $product->image) : asset('images/placeholder-image.jpg') }}" alt="" class="img-product" id="file-preview" />
+                <input type="file" name="image" accept="image/*" onchange="showFile(event)" style="margin-top: 10px;" required >
+
+                
+                <label style="margin-top: 20px;">Categoria</label>
                 <select  name="category" >
                   @foreach (json_decode('{"Smartphone":"Smartphone", "Smart TV":"Smart TV", "PC":"PC"}', true) as $optionKey => $optionValue)
                     <option value="{{ $optionKey }}" >{{ $optionValue }}</option>

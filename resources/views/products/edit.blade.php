@@ -27,9 +27,8 @@
                 <img src="{{ asset('images/'.$product->image) }}" alt="" class="img-product" id="file-preview" />
                 <input type="hidden" name="hidden_product_image" value="{{$product->image}}" >
                 <input type="file" name="image" accept="image/*" onchange="showFile(event)" >
-            </div>
-            <div>
-                <label>Categoria</label>
+
+                <label style="margin-top: 10px;">Categoria</label>
                 <select  name="category" >
                   @foreach (json_decode('{"Smartphone":"Smartphone", "Smart TV":"Smart TV", "PC":"PC"}', true) as $optionKey => $optionValue)
                     <option value="{{ $optionKey }}" {{ (isset($product->category) && $product->category === $optionKey) ? 'selected' : '' }} >{{ $optionValue }}</option>

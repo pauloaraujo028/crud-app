@@ -1,10 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css");
-/* ==========================================================================
-  Custom Properties
-========================================================================== */
 
 :root {
-    --body-color: #6c5ce7;
+    --body-color: #413e3e;
     --primary-color: #fff;
     --primary-color-dark: #f1f1f1;
     --text-dark: #000000;
@@ -14,10 +11,6 @@
     --font-serif: Georgia, Times, "Times New Roman", serif;
     --font-family: "Fira sans", sans-serif;
 }
-
-/* ==========================================================================
-  Sensible defaults
-========================================================================== */
 
 *,
 *:before,
@@ -48,10 +41,6 @@ picture {
     display: block;
 }
 
-/* ==========================================================================
-  Typography
-========================================================================== */
-
 h1,
 h2,
 h3,
@@ -61,13 +50,6 @@ h6 {
     margin: 0;
     font-family: var(--font-family);
 }
-
-/* h1 {
-  font-size: 3.75rem;
-  line-height: 1;
-  margin: 1rem 0 1.5rem;
-  color: var(--primary-color);
-}*/
 
 h1 {
     margin-top: 0.5em;
@@ -126,10 +108,6 @@ hr {
     margin: 1em 0;
 }
 
-/* ==========================================================================
-  Forms
-========================================================================== */
-
 form {
     font-family: var(--font-family);
     width: 100%;
@@ -173,23 +151,6 @@ label {
     margin-bottom: 10px;
     display: block;
 }
-
-/* button,
-input[type="submit"],
-input[type="reset"] {
-  margin-top: 1em;
-  border: 0;
-  background-color: var(--primary-color);
-  color: var(--text-dark);
-  font-family: var(--font-sans);
-  font-size: inherit;
-  font-weight: bold;
-  line-height: 1.2;
-  white-space: nowrap;
-  padding: 1em 2em;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}*/
 
 button,
 input[type="submit"],
@@ -252,10 +213,6 @@ input[type="radio"] {
     height: 1.4em;
 }
 
-/* ==========================================================================
-  Lists
-========================================================================== */
-
 ul {
     margin: 2em 0;
     list-style-type: circle;
@@ -265,10 +222,6 @@ li {
     line-height: 1.8em;
     font-family: var(--font-sans);
 }
-
-/* ==========================================================================
-  Tables
-========================================================================== */
 
 table {
     border-collapse: collapse;
@@ -280,7 +233,7 @@ table {
 
 th {
     /* background-color: var(--primary-color);
-  color: var(--text-dark);*/
+    color: var(--text-dark);*/
     color: #6a727a;
     font-size: 14px;
     font-weight: 500;
@@ -304,9 +257,6 @@ tr:nth-child(odd) {
     background-color: #f3f3f3;
 }
 
-/* ==========================================================================
-  Layout Elements
-========================================================================== */
 section {
     margin: 4rem 0;
 }
@@ -323,9 +273,6 @@ footer {
     padding: 2em;
 }
 
-/* ==========================================================================
-  Custom/Alternative Styles
-========================================================================== */
 .container {
     width: 100%;
     max-width: 780px;
@@ -475,9 +422,9 @@ footer {
 }
 
 .card {
-    display: grid;
-    grid-template-columns: 1fr minmax(auto, 290px);
-    grid-gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #6a727a;
     font-family: var(--font-family);
 }
@@ -489,6 +436,7 @@ footer {
         0 3px 7px -3px rgb(110 110 110 / 10%);
     border-radius: 4px;
     padding: 20px;
+    width: 100%;
 }
 
 .alt {
@@ -503,9 +451,6 @@ footer {
     color: var(--primary-color-dark);
 }
 
-/* ==========================================================================
-  Product custom styles
-========================================================================== */
 .table-product-head {
     padding: 0 30px;
     gap: 10px;
@@ -533,10 +478,6 @@ footer {
     width: 100px;
     height: 80px;
 }
-
-/* ==========================================================================
-  Media queries
-========================================================================== */
 
 @media screen and (max-width: 550px) {
     button,

@@ -4,7 +4,6 @@
         <section>
             <div class="titlebar">
                 <h1>Produtos</h1>
-                <a href="{{ route('products.create')}}" class="btn-link" >Cadastrar Produto</a>
             </div>
             @if ($message = Session::get('success'))
               <script>
@@ -32,11 +31,13 @@
                         <ul class="table-filter-list">
                             <li>
                               <a href="/">
-                                <p class="table-filter-link link-active" style="margin-right: 10px;">Home</p>
+                                <p class="table-filter-link link-active" style="margin-right: 20px;">Home</p>
                               </a>
                             </li>
                             <li>
-                                <p class="table-filter-link link-active">Todos</p>
+                            <a href="{{ route('products.create')}}" >
+                              <p class="table-filter-link link-active" style="margin-right: 10px">Cadastrar</p>
+                            </a>
                             </li>
                         </ul>
                     </div>
