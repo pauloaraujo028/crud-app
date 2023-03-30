@@ -47,6 +47,7 @@
 Sistema simples para o gerenciamento de produtos/estoque (CRUD) Feito com PHP usando Laravel e MySQL.
 
 <img width="1493" alt="crud-app" src="https://user-images.githubusercontent.com/105018299/228914593-170a91f1-bee4-48a0-8b4e-e734d14089f1.png">
+<img width="1493" alt="crud-app" src="https://user-images.githubusercontent.com/105018299/228941399-0623658e-4394-4c86-ad93-634627a0106d.png">
 
 <a name="function"></a>
 **Funcionalidades principais:**
@@ -56,6 +57,7 @@ Sistema simples para o gerenciamento de produtos/estoque (CRUD) Feito com PHP us
 * Página de cadastro de novos produtos.
 * Página para editar produtos já cadastrados.
 * Conexão com banco de dados.
+* Criação de uma API simples.
 
 **Resumo:**
 
@@ -64,6 +66,8 @@ O projeto consiste em um sistema de cadastro de produtos, onde é possível visu
 A implementação do projeto envolveu a criação de rotas, controllers, models e views no Laravel, além da utilização de tecnologias como Bootstrap, jQuery e o plugin SweetAlert2 para melhorar a interface e a experiência do usuário.
 
 Com este projeto, foi possível demonstrar habilidades básicas na criação de pequenas funcionalidades, bem como na edição de projetos já existentes de um sistema web utilizando PHP e Laravel, além de práticas comuns de programação, como a utilização de bibliotecas e frameworks, organização de código e interação com banco de dados.
+
+Foi criado um exemplo de um controlador de API simples para gerenciar o recurso de "produto" com as operações CRUD (criar, ler, atualizar e excluir) no banco de dados. As funções index(), store(), show(), update() e destroy() lidam com as diferentes operações e respondem com um JSON. 
 
 **Próximas atualizações:**
 
